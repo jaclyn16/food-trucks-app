@@ -72,35 +72,3 @@ form button {
   font-size: 1rem;
   cursor: pointer;
 }
-
-.food-trucks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.food-truck {
-  background: ghostwhite;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 1rem;
-  width: 300px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  gap: 1rem;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.value {
-  text-align: right;
-  margin-left: 1rem;
-}

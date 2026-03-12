@@ -83,7 +83,6 @@ By doing this activity together, we will practice...
 
           git checkout main
 
-
 2.  **Update the Target Branch**
 
     Make sure your `main` branch is up-to-date with the latest changes from the remote:
@@ -91,7 +90,7 @@ By doing this activity together, we will practice...
           git pull origin main
 
 3.  **Merge the Specified Branch into the Current branch**
-           git merge new-feature --no-edit
+    git merge new-feature --no-edit
     If this command takes you to a strange window in the Terminal where you can't type anything, don't panic! This is called Vim, a text editor that lives on the command line. You can exit back to the normal command line by typing `:wq`.
 4.  **Push the Merged Changes to the Remote Repository**
 
@@ -146,11 +145,8 @@ Let’s review what we did in this workshop:
 - Approved and merged someone else's pull request
 
 # Next Step: Build the Frontend
-Once you have...
-1. Finished the code for your assigned API endpoint and helper function
-2. Gotten your pull request approved & merged into the shared codebase
-3. Gotten checked off by your instructor
-You're ready to start building the frontend of the Food Trucks App!
+
+Once you've finished your assigned API endpoint and helper function, gotten it approved and merged into the shared codebase, you're ready to start building the frontend of the Food Trucks App!
 
 ## Your Task
 
@@ -158,3 +154,13 @@ You're ready to start building the frontend of the Food Trucks App!
 - Render all food truck data on the Home page as cards.
 
 <img width="1000" alt="Home page of the Food Trucks App" src="https://github.com/user-attachments/assets/1698b582-4023-4d93-bf6e-ed092a0dfaef" />
+
+## Stretch Goals 🌟
+
+Finished? Try one of these bonus challenges!
+
+1. 🌟 Add a delete button to each food on the Home page
+2. 🌟 Show a "Top Rated" badge on trucks with rating >= 4.5.
+3. 🌟 Display a total count of food trucks at the top of the page.
+4. 🌟 Add a sort feature on the frontend for price level or rating.
+5. 🌟 Add a search bar to find a food truck by name.
