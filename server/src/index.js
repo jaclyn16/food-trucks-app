@@ -41,6 +41,14 @@ async function getAllFoodTrucks() {
 
 // 7. getFoodTrucksSortedByPrice()
 
+async function sortedByPrice() {
+  const result = await db.query("SELECT name, id, price_level FROM food_trucks ORDER BY price_level DESC");
+  console.log(result.rows);
+  return result.rows;
+};
+
+// API endpoint `/get-food-trucks-sorted-by-price` 
+
 // 8. getFoodTrucksCount()
 
 // 9. addOneFoodTruck(name, current_location, daily_special, slogan, has_vegan_options, price_level, rating)
@@ -99,6 +107,11 @@ app.get("/get-all-food-trucks", async (req, res) => {
 // 6. GET /get-food-trucks-sorted-by-rating
 
 // 7. GET /get-food-trucks-sorted-by-price
+
+app.get("/get-food-trucks-sorted-by-price", async (req, res) => {
+  const sortedFoodTruckPrice = await sortedByPrice();
+  res.json(sortedFoodTruckPrice);
+});
 
 // 8. GET /get-food-trucks-count
 
