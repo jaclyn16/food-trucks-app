@@ -2,7 +2,9 @@
 
 We will work as a team of developers to create the API for a Food Trucks App. 
 
-Each developer will code and test their assigned API endpoint & helper function. Assigned tasks are listed in the `api-documentation.md` file. 
+Each developer will code and test their assigned API endpoint & helper function. 
+
+Check out the `api-documentation.md` file for the assigned tasks. 
 
 ## **Learning Goals**
 
@@ -23,7 +25,9 @@ By doing this activity together, we will practice...
 
 ## Instructions
 
-### 1. Forking and Cloning this Github repo
+---
+
+### 🛠️ 1. Forking and Cloning this Github repo
 
 1. Fork this Repository to make a copy into your Github account by selecting the 'Fork' button
    <img width="707" alt="Screenshot of Github repo with Fork button" src="https://github.com/user-attachments/assets/0f6a1ddf-60d2-4e63-859c-b84bfaafacde" />
@@ -39,8 +43,16 @@ By doing this activity together, we will practice...
    - `cd` to into your `dev` folder, which is where you want to clone the repo
    - Type `git clone YOUR_REPO_URL` , replacing `YOUR_REPO_URL` with your Github repo link that you copied
    - Press Enter to run the command. Now you’ve cloned your Github repo! 🎉
+  
+---
 
-### 2. Making a new branch in your Github repo
+### 🛠️ 2. Adding the `config.js` file
+
+In the `server/src` folder, create a `config.js` file. Your instructor will provide you with code that you will copy and paste into this file, which will contain the access credentials to the Food Trucks database that's already hosted on Neon. 
+
+---
+
+### 🛠️ 3. Making a new branch in your Github repo
 
 1. Create a branch called “new-feature”
 
@@ -62,7 +74,9 @@ By doing this activity together, we will practice...
    - If it says “main” instead of “new-feature”, that means you are currently on the main branch. Click on the branch name to switch the branch you’re on in VS Code.
    - From now on, you should always check which branch you’re in before you write any code — you don’t want to accidentally write code in the wrong branch! Generally, you only write code in a feature branch or a develop branch, never in the main branch.
 
-### 3. Edit the SQL-cheatsheet.md file in your `new-feature` branch
+---
+
+### 🛠️ 4. Edit the index.js file in your `new-feature` branch
 
 1. You have been assigned an API endpoint. Your task is to:
    - Complete the API endpoint (with either `app.get()` or `app.post()`
@@ -77,7 +91,9 @@ By doing this activity together, we will practice...
    git push origin new-feature
    ```
 
-### 4. Merging the new-feature branch into your main branch
+---
+
+### 🛠️ 5. Merging the new-feature branch into your main branch
 
 1.  **Switch to the Target Branch (e.g., `main`)**
 
@@ -100,7 +116,9 @@ By doing this activity together, we will practice...
 
           git push origin main
 
-### 5. Submit a Pull Request (PR)
+---
+
+### 🛠️ 6. Submit a Pull Request (PR)
 
 In order to have your code accepted back into the original repo, you'll need to submit a pull request.
 
@@ -120,17 +138,23 @@ In order to have your code accepted back into the original repo, you'll need to 
 7. Submit the Pull Request:
    - Click the **Create Pull Request** button.
 
-### 5. Review, Provide Feedback, and Accept another person's Pull Request
+---
+
+### 🛠️ 7. Review, Provide Feedback, and Accept another person's Pull Request
 
 1. Review one other person's pull request and look at their code that they want to merge into the main branch. [The Github documentation on pull requests will help you do this.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)
 2. Add a comment to their pull request and provide feedback about their proposed changes. This is an opportunity to practice talking about code and giving respectful and constructive feedback: if you notice something cool or admirable, tell them! Or if you notice something they can improve or something they should fix before the pull request can be approved, let them know.
 3. If their code looks good to you, approve their pull request so that their code can be merged.
 
-### If you get a merge conflict error
+---
+
+### 🛠️ If you get a merge conflict error
 
 Congrats on encountering your very first merge conflict error! 🎉 [Check out this article to see how you can resolve it](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)!
 
-## Recap
+---
+
+## 🛠️ Recap
 
 Let’s review what we did in this workshop:
 
@@ -145,6 +169,8 @@ Let’s review what we did in this workshop:
 - Submitted a pull request to have code accepted back into original repo. Someone else will review our pull request.
 - Review and add comments/feedback to someone else's pull request
 - Approved and merged someone else's pull request
+
+---
 
 # Next Step: Build the Frontend
 
