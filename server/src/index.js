@@ -49,11 +49,12 @@ async function getFoodTruckById(id) {
 // 4. getFoodTrucksByPrice(price)
 
 // 5. getTopRatedFoodTrucks()
+// 💎this function gets all food trucks w/a rating of 4.5 or higher..
 async function getTopRatedFoodTrucks() {
-  const result = await db.query(
-    "SELECT * FROM food_trucks WHERE rating >= 4.5"
+  const result = await db.query( //💎runs a sql query to get data from the database..
+    "SELECT * FROM food_trucks WHERE rating >= 4.5" //💎SELECTS everything from food trucks table to match the rating
   );
-  return result.rows;
+  return result.rows; //💎reuturns just the rows-the actual data..
 }
 
 // 6. getFoodTrucksSortedByRating()
@@ -171,9 +172,10 @@ app.get("/get-food-truck-by-id/:id", async (req, res) => {
 // 4. GET /get-food-trucks-by-price/:price
 
 // 5. GET /get-top-rated-food-trucks
+// 💎this endpoint runs when we use this url using a GET request..
 app.get("/get-top-rated-food-trucks", async (req, res) => {
-  const trucks = await getTopRatedFoodTrucks();
-  res.json(trucks);
+  const trucks = await getTopRatedFoodTrucks(); //💎calls the helper function to get the data for top-rated
+  res.json(trucks); //💎this sends the data back as JSON so the frontend can see it..
 });
 
 // 6. GET /get-food-trucks-sorted-by-rating
