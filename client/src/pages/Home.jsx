@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"; //importing the react hooks..
 import "../App.css";
 
+// This function is a react component...
 function Home() {
-  const [trucks, setTrucks] = useState([]); //this state will store all the trucks from api..
+  const [trucks, setTrucks] = useState([]); //useState will store all the trucks data from api..
 
-  // this runs once the page loads
+  // this runs data once the page loads
   useEffect(() => {
     fetch("/api/get-all-food-trucks") //fetching data from the backend api..
       .then((res) => res.json()) //converts response into JSON
